@@ -6,6 +6,8 @@
 *.so
 *.dylib
 *.spk
+/tailscale
+/tailscaled
 
 cmd/tailscale/tailscale
 cmd/tailscaled/tailscaled
@@ -24,8 +26,9 @@ ssh/tailssh/testcontainers/tailscaled
 # to make this nonspecific.
 .envrc
 
-# Ignore personal VS Code settings
+# Ignore personal VS Code & IDE settings
 .vscode/
+.idea/
 
 # Support personal project-specific GOPATH
 .gopath/
